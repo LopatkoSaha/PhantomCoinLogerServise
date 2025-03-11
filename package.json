@@ -1,0 +1,33 @@
+{
+  "name": "server_stellar_code",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc && node src/index.ts",
+    "dev": "nodemon --watch src --exec ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "docker compose up -d",
+    "down": "docker compose down"
+  },
+  "keywords": [],
+  "author": "lopatkoaleksandr2@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/connect": "^3.4.38",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "kafkajs": "^2.2.4",
+    "mysql2": "^3.13.0"
+  }
+}
